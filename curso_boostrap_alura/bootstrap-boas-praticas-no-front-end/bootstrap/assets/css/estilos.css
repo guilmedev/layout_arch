@@ -1,0 +1,73 @@
+html, 
+body {
+    height: 100%;
+}
+
+header {
+    background-image: url(../img/castelo.jpg);
+	height: 100%;
+	background-size: cover;
+	background-position: top center;
+}
+
+/*Sobreescrever Boostrap
+ para o h1 do banner*/
+header h1{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*Style banner*/
+header .banner{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;		
+	border-radius: 12px;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.3s;
+	
+}
+
+#paineis-control{
+	margin-top: 10px;
+}
+
+.depo-cliente{
+	color: white;
+	background-color: #0275D8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0;	
+}
+
+footer{
+	margin-top: 12px;
+	color: white;
+	background-color: #333;
+	padding: 12px;
+	text-align: center;
+}
+
+footer address:last-child{
+	padding-bottom: 0;
+}
+/*Media Query > 768px*/
+@media (min-width: 768px){
+	/*Remover margin do sobre nós*/
+	#paineis-control {
+		 margin-top: 0px;		 
+	}
+
+	.img-responsive{
+		margin-bottom: 30px;
+	}
+
+	header .banner{		
+		top: 70%;
+		width: 50%;				
+		text-align: center;
+	}
+}
